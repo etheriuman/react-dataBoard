@@ -1,26 +1,25 @@
 import { useHistory } from 'react-router-dom'
 
 const NavBar = () => {
-  // router hooks
+  // router hooks ----------
   let history = useHistory()
-
-  // styled components
-  const
-    navbar = {
-      width: '100vw',
-      height: '60px',
-      background: '#e3e3e3',
-      
-    }
-
+  const userName = 'Ether'
+  // styled components ----------
+  const navbar = {
+    height: '80px',
+  }
+  // functions ----------
   function logOutOnClick() {
     history.push('/signin')
     console.log('logging out')
   }
 
   return (
-    <div style={ navbar }>
-      <button onClick={() => {logOutOnClick()}}>Log Out</button>
+    <div className="w-100 bg-secondary px-3 d-flex flex-column justify-content-center align-items-end" style={ navbar }>
+      <p className="mb-2">
+        Welcome, { userName }
+      </p>
+      <button className="button btn-sm btn-danger" onClick={() => {logOutOnClick()}}>Log Out</button>
     </div>
   )
 }
