@@ -4,10 +4,6 @@ const NavBar = () => {
   // router hooks ----------
   let history = useHistory()
   const userName = 'Ether'
-  // styled components ----------
-  const navbar = {
-    height: '80px',
-  }
   // functions ----------
   function logOutOnClick() {
     history.push('/signin')
@@ -15,11 +11,11 @@ const NavBar = () => {
   }
 
   return (
-    <div className="w-100 bg-secondary px-3 d-flex flex-column justify-content-center align-items-end" style={ navbar }>
-      <p className="mb-2">
-        Welcome, { userName }
+    <div className="w-100 bg-dark px-3 py-3 d-flex  justify-content-end align-items-center">
+      <p className="mx-5 text-light">
+        Welcome,{ userName }
       </p>
-      <button className="button btn-sm btn-danger" onClick={() => {logOutOnClick()}}>Log Out</button>
+      <button className="button btn btn-sm btn-outline-danger" onClick={() => {logOutOnClick()}}>Log Out</button>
     </div>
   )
 }
