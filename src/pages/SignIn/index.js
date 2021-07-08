@@ -73,7 +73,7 @@ const SignIn = () => {
   return (
     <div className="h-100 d-flex justify-content-center align-items-center bg-dark">
       <div className="h-100 d-flex flex-column justify-content-center">
-        <h1 className="w-100 text-center mb-5 text-info">USER FILTER</h1>
+        <h1 className="w-100 text-center mb-5 text-info">THE USERS</h1>
         <h6 className="w-100 text-center mb-3 text-light">Please Sign In</h6>
           <input id="email" type="text" className="form-control mb-3" placeholder="email"></input>
           <input id="password" type="text" className="form-control mb-3" placeholder="password"></input>
