@@ -51,12 +51,12 @@ const Home = () => {
     <div className="row m-auto w-100 h-100">
       <FilterBoard filterUsers={ setShowingUsers } initialUsers={ initialUsers } setKeyword={ setKeyword } />
       <div className="col-9 h-100">
-        <div className=" p-2 w-100 row m-auto">
+        <div className="p-1 mb-3 w-100 row m-auto">
           <ChartBoardA showingUsers={ showingUsers } />
           <ChartBoardB showingUsers={ showingUsers } />
           <ChartBoardC showingUsers={ showingUsers } />
         </div>
-        <TabularDataBoard showingUsers={ showingUsers } keyword={ keyword } />
+        <TabularDataBoard showingUsers={ showingUsers } />
       </div>
     </div>
   </div>

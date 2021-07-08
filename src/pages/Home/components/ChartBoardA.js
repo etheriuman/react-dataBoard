@@ -8,7 +8,7 @@ const ChartBoardA = ({ showingUsers }) => {
 
   return (
     <div className="col-4 text-center">
-      <h4 className="my-3">Genders</h4>
+      <h4 className="my-2">Genders</h4>
       <Doughnut
         data={{
           labels: ['Male', 'Female'],

@@ -10,7 +10,7 @@ const ChartBoardB = ({ showingUsers }) => {
 
   return (
     <div className="col-4 text-center">
-      <h4 className="my-3">Age Groups</h4>
+      <h4 className="my-2">Age Groups</h4>
       <Pie
         data={{
           labels: ['under 25', 'between', 'over 65'],

@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <div className="w-100 bg-dark px-3 py-3 d-flex  justify-content-end align-items-center">
       <p className="mx-5 text-light">
-        Welcome,{ userName }
+        { `Welcome, ${userName}` }
       </p>
       <button className="button btn btn-sm btn-outline-danger" onClick={() => {logOutOnClick()}}>Log Out</button>
     </div>

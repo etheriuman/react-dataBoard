@@ -8,7 +8,7 @@ const ChartBoardC = ({ showingUsers }) => {
 
   return (
     <div className="col-4 text-center">
-      <h4 className="my-3">Location</h4>
+      <h4 className="my-2">Location</h4>
       <Doughnut
         data={{
           labels: ['Northern hemisphere', 'Southern hemisphere'],

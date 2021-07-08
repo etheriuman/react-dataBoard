@@ -1,19 +1,18 @@
 import TabularDataRow from './TabularDataRow'
 
-const TabularDataBoard = ({ showingUsers, keyword }) => {
+const TabularDataBoard = ({ showingUsers }) => {
 
   const boardStyle = {
-    height: '100%',
+    height: '320px',
     overflow: 'auto'
   }
 
   return (
-    <div className="w-100" style={boardStyle}>
-      keyword: { keyword }
+    <ul className="w-100 list-group" style={boardStyle}>
       {
         showingUsers.map(showingUser => <TabularDataRow showingUser={ showingUser } key={ showingUser.login.uuid } />)
       }
-    </div>
+    </ul>
   )
 }
 
