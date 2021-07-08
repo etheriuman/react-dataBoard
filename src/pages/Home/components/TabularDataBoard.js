@@ -8,7 +8,7 @@ const TabularDataBoard = ({ showingUsers, keyword }) => {
   }
 
   return (
-    <div style={boardStyle}>
+    <div className="w-100" style={boardStyle}>
       keyword: { keyword }
       {
         showingUsers.map(showingUser => <TabularDataRow showingUser={ showingUser } key={ showingUser.login.uuid } />)

@@ -53,6 +53,12 @@ const SignIn = () => {
     localStorage.setItem('userName', dummyUser.name.first)
     localStorage.setItem('token', dummyUser.token)
     // successfully sign in
+    // welcome allert
+    const userName = localStorage.getItem('userName')
+    Toast.fire({
+      icon: 'success',
+      title: `Welcome! ${userName}`
+    })
     return history.push('/home')
 
   }

@@ -41,12 +41,6 @@ const Home = () => {
   // use effect when mounted once
   useEffect(() => {
     fetchUsers()
-    // welcome allert
-    const userName = localStorage.getItem('userName')
-    Toast.fire({
-      icon: 'success',
-      title: `Welcome! ${userName}`
-    })
   }, [])
 
   // render...
@@ -57,10 +51,10 @@ const Home = () => {
     <div className="row m-auto w-100 h-100">
       <FilterBoard filterUsers={ setShowingUsers } initialUsers={ initialUsers } setKeyword={ setKeyword } />
       <div className="col-9 h-100">
-        <div className="w-100 row m-auto">
-          <ChartBoardA />
-          <ChartBoardB />
-          <ChartBoardC />
+        <div className=" p-2 w-100 row m-auto">
+          <ChartBoardA showingUsers={ showingUsers } />
+          <ChartBoardB showingUsers={ showingUsers } />
+          <ChartBoardC showingUsers={ showingUsers } />
         </div>
         <TabularDataBoard showingUsers={ showingUsers } keyword={ keyword } />
       </div>
