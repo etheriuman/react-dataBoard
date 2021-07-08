@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import Toast from './../../utils/helper'
 
@@ -15,6 +16,11 @@ const SignIn = () => {
     password: '1234',
     token: '28825252'
   }
+
+  // destroy token when sign in page be visited
+  useEffect(() =>  {
+    localStorage.removeItem('token')
+  }, [])
 
   // onSubmit
   function onSubmit() {
@@ -67,7 +73,8 @@ const SignIn = () => {
   return (
     <div className="h-100 d-flex justify-content-center align-items-center bg-dark">
       <div className="h-100 d-flex flex-column justify-content-center">
-        <h3 className="w-100 text-center mb-5 text-light">Please Sign In</h3>
+        <h1 className="w-100 text-center mb-5 text-info">USER FILTER</h1>
+        <h6 className="w-100 text-center mb-3 text-light">Please Sign In</h6>
           <input id="email" type="text" className="form-control mb-3" placeholder="email"></input>
           <input id="password" type="text" className="form-control mb-3" placeholder="password"></input>
           <button onClick={() => {onSubmit()}} className="button btn btn-info mt-3">Submit</button>
