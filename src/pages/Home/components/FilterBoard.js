@@ -1,13 +1,12 @@
 import { useState } from 'react'
 
-const FilterBoard = ({ initialUsers, filterUsers, setKeyword }) => {
+const FilterBoard = ({ initialUsers, filterUsers }) => {
   // states
   const [filterMethod, setFilterMethod] = useState('all')
   // function ----------
   function keywordOnChange(e) {
     const currentKeyword = e.target.value
     filterWithKeyword(currentKeyword)
-    setKeyword(currentKeyword)
   }
   
   function setCurrentFilterMethod(method) {

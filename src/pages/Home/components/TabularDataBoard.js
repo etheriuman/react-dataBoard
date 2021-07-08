@@ -3,7 +3,7 @@ import TabularDataRow from './TabularDataRow'
 const TabularDataBoard = ({ showingUsers }) => {
 
   const boardStyle = {
-    height: '320px',
+    height: '55%',
     overflow: 'auto'
   }
 

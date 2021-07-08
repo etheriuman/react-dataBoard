@@ -6,8 +6,11 @@ const NavBar = () => {
   const userName = 'Ether'
   // functions ----------
   function logOutOnClick() {
-    history.push('/signin')
     console.log('logging out')
+    // destroy the stored token
+    localStorage.removeItem('token')
+    // redirect to sign in page
+    history.push('/signin')
   }
 
   return (
