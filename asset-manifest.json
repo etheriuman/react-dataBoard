@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-dataBoard/static/css/main.55979435.chunk.css",
+    "main.js": "/react-dataBoard/static/js/main.aade6332.chunk.js",
+    "main.js.map": "/react-dataBoard/static/js/main.aade6332.chunk.js.map",
+    "runtime-main.js": "/react-dataBoard/static/js/runtime-main.d4dbc16d.js",
+    "runtime-main.js.map": "/react-dataBoard/static/js/runtime-main.d4dbc16d.js.map",
+    "static/css/2.4be38407.chunk.css": "/react-dataBoard/static/css/2.4be38407.chunk.css",
+    "static/js/2.13363be0.chunk.js": "/react-dataBoard/static/js/2.13363be0.chunk.js",
+    "static/js/2.13363be0.chunk.js.map": "/react-dataBoard/static/js/2.13363be0.chunk.js.map",
+    "index.html": "/react-dataBoard/index.html",
+    "static/css/2.4be38407.chunk.css.map": "/react-dataBoard/static/css/2.4be38407.chunk.css.map",
+    "static/css/main.55979435.chunk.css.map": "/react-dataBoard/static/css/main.55979435.chunk.css.map",
+    "static/js/2.13363be0.chunk.js.LICENSE.txt": "/react-dataBoard/static/js/2.13363be0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d4dbc16d.js",
+    "static/css/2.4be38407.chunk.css",
+    "static/js/2.13363be0.chunk.js",
+    "static/css/main.55979435.chunk.css",
+    "static/js/main.aade6332.chunk.js"
+  ]
+}
